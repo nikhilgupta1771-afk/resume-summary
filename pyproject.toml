@@ -3,18 +3,21 @@ name = "reflex-resume-copilot"
 version = "0.1.0"
 description = "AI resume copilot built with Reflex."
 readme = "README.md"
-
 requires-python = ">=3.11"
+
 dependencies = [
-  "reflex==0.9.5.post2",
-  "pypdf",
-  "google-genai",
-  "pydantic"
+    "reflex==0.9.5.post2",
+    "pypdf",
+    "google-genai",
+    "pydantic"
 ]
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["reflex_resume_copilot"]
 
 [tool.vercel]
 entrypoint = "reflex_resume_copilot.reflex_resume_copilot:app"
